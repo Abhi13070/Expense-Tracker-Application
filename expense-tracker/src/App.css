@@ -1,3 +1,4 @@
+/* Overall layout styles */
 .App {
   background-color: lightblue;
   display: flex;
@@ -5,13 +6,19 @@
   align-items: center;
   min-height: 150vh;
   margin: 0;
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
   font-family: 'Lato', sans-serif;
+  color: #333; /* Default text color */
+  text-align: center; /* Center-align text */
+  line-height: 1.6; /* Set line height for better readability */
 }
 
 /* Logo styles */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
 }
 
 /* Animation styles */
@@ -31,11 +38,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px; /* Add padding for spacing */
 }
 
 /* Link styles */
 .App-link {
   color: #61dafb;
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.App-link:hover {
+  color: #00bcd4; /* Change link color on hover */
 }
 
 /* Animation keyframes */
