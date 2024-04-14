@@ -8,17 +8,20 @@
   font-family: 'Lato', sans-serif;
 }
 
+/* Logo styles */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation styles */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,10 +33,12 @@
   color: white;
 }
 
+/* Link styles */
 .App-link {
   color: #61dafb;
 }
 
+/* Animation keyframes */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
