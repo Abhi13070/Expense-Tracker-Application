@@ -10,9 +10,23 @@ import NewTransaction from './components/NewTransaction';
 
 const Header = styled(Typography)`
   margin: 10px 0;
-  color: blue;
+  color: black;
   font-size: 36px;
   text-transform: uppercase;
+  font-weight: bold; /* Adding bold font weight */
+  text-align: center; /* Center aligning text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding text shadow for depth */
+  /* Adding a background color and padding */
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  /* Adding border radius for rounded corners */
+  border-radius: 5px;
+  /* Adding hover effect */
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #e0e0e0;
+    color: #333; /* Darkening the text color on hover */
+  }
 `;
 
 const Component = styled(Box)`
