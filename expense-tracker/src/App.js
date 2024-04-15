@@ -9,23 +9,26 @@ import Transactions from './components/Transactions';
 import NewTransaction from './components/NewTransaction';
 
 const Header = styled(Typography)`
-  margin: 10px 0;
-  color: black;
-  font-size: 36px;
+  margin: 20px 0; /* Increased margin for better spacing */
+  color: #333; /* Darker text color for better contrast */
+  font-size: 48px; /* Larger font size */
   text-transform: uppercase;
-  font-weight: bold; /* Adding bold font weight */
-  text-align: center; /* Center aligning text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding text shadow for depth */
-  /* Adding a background color and padding */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   background-color: #f0f0f0;
-  padding: 10px 20px;
-  /* Adding border radius for rounded corners */
-  border-radius: 5px;
-  /* Adding hover effect */
-  transition: all 0.3s ease-in-out;
+  padding: 20px 40px; /* Increased padding for better emphasis */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s, color 0.3s; /* Separated transition properties */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  user-select: none; /* Prevent text selection */
   &:hover {
     background-color: #e0e0e0;
-    color: #333; /* Darkening the text color on hover */
+    color: #222; /* Darkened hover text color */
+  }
+  &:active {
+    transform: translateY(2px); /* Add slight downward movement on click */
   }
 `;
 

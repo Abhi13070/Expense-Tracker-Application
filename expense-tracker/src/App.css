@@ -1,6 +1,6 @@
 /* Overall layout styles */
 .App {
-  background-color: #f9f9f9; /* Change background color to a light gray */
+  background-color: #f2f2f2; /* Light gray background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +9,11 @@
   padding: 20px; /* Add padding for spacing */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
   font-family: 'Arial', sans-serif; /* Change font family to Arial */
-  color: #555; /* Darken text color for better contrast */
+  color: #333; /* Darken text color for better contrast */
   text-align: center; /* Center-align text */
-  line-height: 1.8; /* Increase line height for better readability */
+  line-height: 1.6; /* Set line height for better readability */
+  border-top: 5px solid #007bff; /* Add a top border with primary color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 /* Logo styles */
@@ -28,19 +30,15 @@
   }
 }
 
-/* Header styles */
+/* Header style */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding: 20px; /* Add padding for spacing */
+  background-color: #007bff; /* Primary color background */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding for header */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-bottom: 20px; /* Margin to separate header from content */
 }
-
 /* Link styles */
 .App-link {
   color: #61dafb;
@@ -50,6 +48,16 @@
 
 .App-link:hover {
   color: #00bcd4; /* Change link color on hover */
+}
+
+/* Footer style */
+.App-footer {
+  background-color: #007bff; /* Primary color background */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding for footer */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-top: auto; /* Align footer to bottom */
 }
 
 /* Animation keyframes */
