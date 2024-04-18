@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Typography, Box, styled } from '@mui/material';
 import './App.css';
@@ -48,12 +48,19 @@ const Component = styled(Box)`
 
 function App() {
   
-  const [transactions, setTransactions] = useState([
-    { id: 1, text: 'Momos', amount: -20},
-    { id: 2, text: 'Salary', amount: 3000},
-    { id: 3, text: 'Book', amount: -100},
-    { id: 4, text: 'Bonus', amount: 1500 },
-  ]);
+  const [transactions, setTransactions] = useState([]);
+
+  useEffect(() => {
+    const storedItems = JSON.parse(localStorage.getItem('data'));
+    console.log("data : ", storedItems)
+    if (storedItems) {
+      setTransactions(storedItems);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('data', JSON.stringify(transactions));
+  }, [transactions]);
 
   const deleteTransaction = (id) => {
     console.log(id);
